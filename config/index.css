@@ -1,0 +1,118 @@
+/* 
+    Application scope : Complete WEB-Page
+    -------------------------------------
+    universal selector (*) : to apply the box-sizing property to all elements on the page. 
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+ /* 
+    Application scope : Complete WEB-Page
+    -------------------------------------
+    "body" selector (corresponding to HTML-'body'element): 
+        attributes are used to center the content of the page and ensure that it takes up 
+        the full width of the viewport. 
+ */ 
+  body {
+    background: #ebddd9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 10vw;
+    text-align: left;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+
+  /*
+    Application scope : Complete WEB-Page
+    -------------------------------------
+    "container" selector (corresponding to HTML- div class 'container'): 
+        styles for a container element that holds the page content. 
+  */
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+
+
+
+
+  /*
+    Application scope : Individual Elements of the web page
+    -------------------------------------------------------
+    "h1" selector : defines the styles for the main heading of the page.
+    "@media" rules : applies the styles to the page when the screen width is less than or equal to 768 pixels. 
+                     In this case, it reduces the font size of the "h1" heading and aligns the text to the center.
+  */
+  h1 {
+    font-size: 3vw;
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+  
+  /*
+    Application scope : Individual Elements of the web page
+    -------------------------------------------------------
+    "input", "button", and "textarea" selectors : define the styles for form elements like input fields 
+                                                  and button.
+  */
+  input {
+    margin: 1em;
+    display: inline-flex;
+    width: 200px;
+    background: none;
+    padding: 1rem;
+    border: 1px solid #222;
+    outline: none;
+  }
+  
+  button {
+    display: inline-flex;
+    background: #222;
+    width: 100px;
+    justify-content: center;
+    color: #f7f7f7;
+    padding: 1rem;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 2s;
+    cursor: pointer;
+  }
+  
+  textarea {
+    margin: 1em;
+    display: inline-flex;
+    width: 200px;
+    background: none;
+    padding: 1rem;
+    border: 1px solid #222;
+    outline: none;
+  }
+  
+  /*
+    Application scope : Individual Elements of the web page :: Button
+    -----------------------------------------------------------------   
+    "success" class : changes the background color of the element to a teal color (#0d8b79) 
+                      when an action is successful. 
+  */
+  .success {
+    background: #0d8b79;
+    transition: 0.3s;
+  }

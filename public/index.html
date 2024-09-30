@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Contains metadata and links to external resources that the web page will use. -->
+  <head>
+    <title>Copy Text to Clipboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../config/index.css" />
+  </head>
+<!----------------------------------------------------------------------------------->
+
+<!-- Contains the visible content of the web page. 
+    
+    <div> to group related UI elements together
+        
+        1. set the heading of the web page as "Copy to clipboard."
+        2. input-field with default text as "copy me!"
+        3. a button which user can click to copy the text.
+        4. a placeholder for the text that the user can paste into.
+
+    <div>
+-->
+  <body>
+
+    <div class="container">
+    <h1>Copy to clipboard</h1>
+    <input class="copy-text" type="text" value="copy me!">
+    <button class="copy-button">Copy</button>
+    <textarea class="testTextArea" placeholder="Paste text here" rows="4"></textarea>
+    </div>
+
+        <script src="../src/index.js"></script>
+  </body>
+
+</html>
